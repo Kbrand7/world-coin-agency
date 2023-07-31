@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>World coin agencies</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+conta{
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 50px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	margin-bottom: 20px;
+	font-size: 16px;
+	resize: none;
+}
+
+form input[type="submit"] {
+	background-color: #e64c65;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+	background-color: #c73c4b;
+}
+
+social-icons {
+	display: flex;
+	justify-content: left;
+	margin-bottom: 20px;
+}
+
+social-icons a {
+	margin: 0 10px;
+	color: white;
+	font-size: 24px;
+	transition: color 0.3s ease;
+}
+
+social-icons a:hover {
+	color: #e64c65;
+}
+</style>
+</head>
+<body>
+		<nav>
+		<div class="nav-links">
+			<ul>
+				<li><a href="index1.html">Home</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+			</ul>
+		</div>
+		</nav>
+  <header>
+ <h1>CONTACT US</h1>
+  </header>
+  <main>
+	<div class="conta">
+		<div class="social-icons">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+			<a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
+		</div>
+		<form action="#" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+  </main>
+
+   <footer>
+   <?php
+// This is a simplified example; you should use proper authentication and security mechanisms in a real-world application.
+$validUsername = 'admin';
+$validPassword = 'password';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  if ($username === $validUsername && $password === $validPassword) {
+    // Redirect to the Home page after successful login
+    header('Location: index.php');
+    exit;
+  } else {
+    echo 'Invalid credentials. Please try again.';
+  }
+}
+?>
+<?php
+// This is a simplified example; you should use proper authentication and security mechanisms in a real-world application.
+$validUsername = 'admin';
+$validPassword = 'password';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  if ($username === $validUsername && $password === $validPassword) {
+    // Redirect to the Home page after successful login
+    header('Location: index.php');
+    exit;
+  } else {
+    echo 'Invalid credentials. Please try again.';
+  }
+}
+?>
+
+CONTACT US VIA WHATSAPP ON <a href="https://wa.me/qr/DOF7OXN6YYDCG1">+1 (646) 553-6176</a> OR <a href="https://wa.me/qr/KYTBOWVE6GJGA1">+254774233491</a> for more details
+  </footer>
+
+ 	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+  var slides = document.getElementsByClassName("slide");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+</script>
+</body>
+</html>

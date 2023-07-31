@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORLD COIN AGENCIES</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial Black;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+ <img src="worldcoin.jpg">
+  <main>
+      <h1>Login</h1>
+    <form action="login_handler.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+ <div class="container">
+    <h1 style="color: red; font-size: 30px; font-family: Arial, sans-serif;">Welcome to World coin Agency</h1>
+    <p>
+    Introducing "World Coin Agencies" - a promising new investing company that has recently launched in Kenya, offering exciting opportunities to investors looking to grow their wealth. With a minimum investment requirement of more than 500 Kenyan Shillings, this company aims to empower individuals from all walks of life to participate in the growth of their financial future.
+    </p>
+<p>
+At "World Coin Agencies," the potential for substantial returns awaits those willing to take a step towards financial prosperity. Investors who seize this opportunity will witness their investments soar with a remarkable 50% increment after just one week of investment. This incredible growth rate sets the stage for an exciting journey towards financial success, creating a positive impact on the lives of those who choose to be part of this venture.
+</p>
+<p>
+As the company prioritizes transparency and reliability, clients can rest assured that their investments are handled with utmost care by a team of seasoned financial experts. Additionally, "World Coin Agencies" emphasizes accountability and maintains clear communication channels to keep investors informed about the progress of their investments.
+</p>
+<p>
+The launch of "World Coin Agencies" marks a significant milestone in Kenya's financial landscape, providing a gateway for individuals to take charge of their financial destinies. Whether it's saving for future goals, funding a dream project, or securing financial stability, this innovative investing company aims to be the catalyst for positive change and wealth creation in the lives of Kenyan investors.
+</p>
+  </div>
+  </main>
+  <footer>
+   <?php
+// This is a simplified example; you should use proper authentication and security mechanisms in a real-world application.
+$validUsername = 'admin';
+$validPassword = 'password';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  if ($username === $validUsername && $password === $validPassword) {
+    // Redirect to the Home page after successful login
+    header('Location: index.php');
+    exit;
+  } else {
+    echo 'Invalid credentials. Please try again.';
+  }
+}
+?>
+<?php
+// This is a simplified example; you should use proper authentication and security mechanisms in a real-world application.
+$validUsername = 'admin';
+$validPassword = 'password';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  if ($username === $validUsername && $password === $validPassword) {
+    // Redirect to the Home page after successful login
+    header('Location: index.php');
+    exit;
+  } else {
+    echo 'Invalid credentials. Please try again.';
+  }
+}
+?>
+
+CONTACT US VIA WHATSAPP ON <a href="https://wa.me/qr/DOF7OXN6YYDCG1">+1 (646) 553-6176</a> OR <a href="https://wa.me/qr/KYTBOWVE6GJGA1">+254774233491</a> for more details
+  </footer>
+</body>
+</html>
